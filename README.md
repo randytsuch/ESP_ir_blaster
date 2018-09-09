@@ -1,6 +1,8 @@
 # ESP_ir_blaster
 program for an ESP to turn on my tv
-/*  Modified by Randy Tsuchiyama for my setup
+
+/*  Modified by Randy Tsuchiyama for my setup.  
+Some minor changes to make it compile and work with current libraries.
  *  Based on
  *  WiFi IR Blaster by Buddy Crotty
  https://www.hackster.io/BuddyC/wifi-ir-blaster-af6bca
