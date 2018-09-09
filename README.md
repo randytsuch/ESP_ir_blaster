@@ -11,13 +11,25 @@ Some minor changes to make it compile and work with current libraries.
  *  This works best with another web server acting as a front end that
  *  sends cURL requests based on which buttons are pressed.
  *  cURL format: http://ESP8266/IRcode
- or put this in your browswer
- 192.168.xxx.xxx/irTVpwron
+
+or put this in your browswer
+ 
+ 192.168.xxx.xxx/irTVvup
+ 
+ using the ip address of the esp to send the command. For me, this will turn tv volume up
+ 
+ The esp will respond, and you should see this:command receivedHTTP/1.1 200 OK
+ 
+ show up in the browser window.
+ 
+ Debugging works best if you have the esp connected with usb to a pc, and open Serial Monitor in Platformio, select you serial port with  baud rage of 115200
  
  Built on Platformio running in Atom on a macbook
+ 
  Platformio has library IRremoteESP8266 by Ken Shirriff installed from Platformio Home
  
  IR codes were determined by using the adafruit guide found there
+ 
  https://learn.adafruit.com/using-an-infrared-library/hardware-needed
  using irlib2
  
@@ -28,12 +40,20 @@ Some minor changes to make it compile and work with current libraries.
  Program gives you codes as hex, I converted to decimal for use in this program
  
  sony tv codes:
+ 
  off = $F50 = dec 3920
+ 
  on = $750 = dec 1872
+ 
  pwr toggle = $A90 = 2704
+ 
  v+ = $490 = 1168
+ 
  v- = $c90 = 3216
+ 
  mute = $290 = 656
  
+ 
  used this for rx of raw rawData
+ 
  https://github.com/cyborg5/IRLib2/blob/master/IRLib2/examples/rawRecv/rawRecv.ino
