@@ -1,6 +1,9 @@
 # ESP_ir_blaster
 program for an ESP to turn on my tv
 
+More info here at my wiki
+https://sites.google.com/view/randyhomeassistant/ir 
+
 /*  Modified by Randy Tsuchiyama for my setup.  
 Some minor changes to make it compile and work with current libraries.
  *  Based on
