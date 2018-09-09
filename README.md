@@ -12,17 +12,19 @@ Some minor changes to make it compile and work with current libraries.
  *  sends cURL requests based on which buttons are pressed.
  *  cURL format: http://ESP8266/IRcode
 
-or put this in your browswer
+To test, put this in your browser address line
  
  192.168.xxx.xxx/irTVvup
  
- using the ip address of the esp to send the command. For me, this will turn tv volume up
+ using the ip address of the esp to. For me, this will turn tv volume up
  
  The esp will respond, and you should see this:command receivedHTTP/1.1 200 OK
  
  show up in the browser window.
  
  Debugging works best if you have the esp connected with usb to a pc, and open Serial Monitor in Platformio, select you serial port with  baud rage of 115200
+ 
+ If you push the ESP reset button with the serial monitor on, you can get the ESP's ip address as it initializes.
  
  Built on Platformio running in Atom on a macbook
  
