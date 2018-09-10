@@ -266,14 +266,6 @@ void loop() {
       irsend.sendRaw(irDVDpwroff, 100U, 37U);
       Serial.println("IRreq irDVDpwr0 sent");
   }
-  else if (req.indexOf("/irDVD2pwr") != -1){
-      irsend.sendPanasonic(176, 62);
-      Serial.println("IRreq irDVDpwr1 sent");
-  }
-  else if (req.indexOf("/irDVD3pwr") != -1){
-      irsend.sendPanasonic(176U, 62U);
-      Serial.println("IRreq irDVDpwr2 sent");
-  }
   else if (req.indexOf("/irDVDplay") != -1){
     irsend.sendRaw(irDVDplay, 100U, 37U);
     Serial.println("IRreq irDVDplay sent");
