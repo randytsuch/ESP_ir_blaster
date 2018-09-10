@@ -36,8 +36,7 @@
 //  Wifi ssid and password here
 const char* ssid = "";
 const char* password = "";
-//////////////////////////////////////////
-// added WiFi before MDNSResponder
+
 MDNSResponder mdns;
 
 int khz = 38; // 38kHz carrier frequency for both NEC and Samsung
