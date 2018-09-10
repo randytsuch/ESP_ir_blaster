@@ -33,8 +33,9 @@
 ///////////////////////////////////////////////////////
 #include <ESP8266mDNS.h>
 
-const char* ssid = "no_strings_tm24";
-const char* password = "randyjanerkb";
+//  Wifi ssid and password here
+const char* ssid = "";
+const char* password = "";
 //////////////////////////////////////////
 // added WiFi before MDNSResponder
 MDNSResponder mdns;
